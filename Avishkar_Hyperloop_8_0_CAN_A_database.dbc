@@ -1,0 +1,622 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IMD IMU HV_BMS LV_BMS TCU DAQ_LF DAQ_LB DAQ_RB DAQ_RF DAQ_Thermal LCU_LF LCU_LB LCU_RB LCU_RF PCU MCU
+
+
+BO_ 2181127951 PCM_Temperature2: 5 DAQ_Thermal
+ SG_ PCM_Temp8 : 27|9@1+ (0.1,20) [20|50] "C"  TCU,DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU
+ SG_ PCM_Temp7 : 18|9@1+ (0.1,20) [20|50] "C"  TCU,DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU
+ SG_ PCM_Temp6 : 9|9@1+ (0.1,20) [20|50] "C"  TCU,DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU
+ SG_ PCM_Temp5 : 0|9@1+ (0.1,20) [20|50] "C"  TCU,DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU
+
+BO_ 2151772671 LCU_Temperature_LF: 4 LCU_LF
+ SG_ LCU_Thermistor4 : 24|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor3 : 16|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor2 : 8|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor1 : 0|8@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2151772927 LCU_Temperature_LB: 4 LCU_LB
+ SG_ LCU_Thermistor4 : 24|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor3 : 16|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor2 : 8|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor1 : 0|8@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2151773439 LCU_Temperature_RB: 4 LCU_RB
+ SG_ LCU_Thermistor4 : 24|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor3 : 16|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor2 : 8|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor1 : 0|8@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2151707135 LCU_Sensors_LF: 8 LCU_LF
+ SG_ LEMS_voltage : 50|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ HEMS_voltage : 40|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ LEMS_current : 30|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ HEMS_current : 20|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap : 10|10@1+ (0.02,0) [0|20.46] "mm"  MCU
+ SG_ Lateral_airgap : 0|10@1+ (0.01,0) [0|10.23] "mm"  MCU
+
+BO_ 2151707391 LCU_Sensors_LB: 8 LCU_LB
+ SG_ LEMS_voltage : 50|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ HEMS_voltage : 40|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ LEMS_current : 30|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ HEMS_current : 20|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap : 10|10@1+ (0.02,0) [0|20.46] "mm"  MCU
+ SG_ Lateral_airgap : 0|10@1+ (0.01,0) [0|10.23] "mm"  MCU
+
+BO_ 2151707903 LCU_Sensors_RB: 8 LCU_RB
+ SG_ LEMS_voltage : 50|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ HEMS_voltage : 40|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ LEMS_current : 30|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ HEMS_current : 20|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap : 10|10@1+ (0.02,0) [0|20.46] "mm"  MCU
+ SG_ Lateral_airgap : 0|10@1+ (0.01,0) [0|10.23] "mm"  MCU
+
+BO_ 2148626943 LCU_Parameters_AcknowledgementLF: 8 LCU_LF
+ SG_ PID_saturation : 52|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap_setpoint : 42|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ Lateral_airgap_setpoint : 32|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ LCU_Kd : 23|9@1+ (1,0) [0|500] ""  MCU
+ SG_ LCU_Ki : 13|10@1+ (1,0) [0|1000] ""  MCU
+ SG_ LCU_Kp : 0|13@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2148627199 LCU_Parameters_AcknowledgementLB: 8 LCU_LB
+ SG_ PID_saturation : 52|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap_setpoint : 42|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ Lateral_airgap_setpoint : 32|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ LCU_Kd : 23|9@1+ (1,0) [0|500] ""  MCU
+ SG_ LCU_Ki : 13|10@1+ (1,0) [0|1000] ""  MCU
+ SG_ LCU_Kp : 0|13@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2148627711 LCU_Parameters_AcknowledgementRB: 8 LCU_RB
+ SG_ PID_saturation : 52|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap_setpoint : 42|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ Lateral_airgap_setpoint : 32|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ LCU_Kd : 23|9@1+ (1,0) [0|500] ""  MCU
+ SG_ LCU_Ki : 13|10@1+ (1,0) [0|1000] ""  MCU
+ SG_ LCU_Kp : 0|13@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2147709439 LCU_Fault_message_LF: 1 LCU_LF
+ SG_ LCU_Thermistor34error : 7|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LCU_Thermistor12error : 6|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Vertical_airgap_error : 1|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Lateral_airgap_error : 0|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_current_error : 3|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_current_error : 2|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_voltage_error : 5|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_Voltage_error : 4|1@1+ (1,0) [0|1] ""  MCU
+
+BO_ 2147709695 LCU_Fault_message_LB: 1 LCU_LB
+ SG_ LCU_Thermistor34error : 7|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LCU_Thermistor12error : 6|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Vertical_airgap_error : 1|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Lateral_airgap_error : 0|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_current_error : 3|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_current_error : 2|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_voltage_error : 5|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_Voltage_error : 4|1@1+ (1,0) [0|1] ""  MCU
+
+BO_ 2147710207 LCU_Fault_message_RB: 1 LCU_RB
+ SG_ LCU_Thermistor34error : 7|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LCU_Thermistor12error : 6|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Vertical_airgap_error : 1|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Lateral_airgap_error : 0|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_current_error : 3|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_current_error : 2|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_voltage_error : 5|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_Voltage_error : 4|1@1+ (1,0) [0|1] ""  MCU
+
+BO_ 2155966975 LEMS_Temperature_LF: 5 DAQ_LF
+ SG_ LEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2155967231 LEMS_Temperature_LB: 5 DAQ_LB
+ SG_ LEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2155967743 LEMS_Temperature_RB: 5 DAQ_RB
+ SG_ LEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ LEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2155901439 HEMS_Temperature_LF: 5 DAQ_LF
+ SG_ HEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2155901695 HEMS_Temperature_LB: 5 DAQ_LB
+ SG_ HEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2155902207 HEMS_Temperature_RB: 5 DAQ_RB
+ SG_ HEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+ SG_ HEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_RF,LCU_RB,LCU_LF,LCU_LB
+
+BO_ 2214690703 DAQ_Sensors2_RF: 4 DAQ_RF
+ SG_ Proximity_up : 24|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_down : 23|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_Temperature : 18|5@1+ (2,25) [25|60] "C"  MCU
+ SG_ LIM_reservoir_pressure : 9|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2214690591 DAQ_Sensors2_LF: 4 DAQ_LF
+ SG_ Proximity_up : 24|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_down : 23|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_Temperature : 18|5@1+ (2,25) [25|60] "C"  MCU
+ SG_ LIM_reservoir_pressure : 9|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2214690639 DAQ_Sensors2_RB: 4 DAQ_RB
+ SG_ Proximity_up : 24|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_down : 23|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_Temperature : 18|5@1+ (2,25) [25|60] "C"  MCU
+ SG_ LIM_reservoir_pressure : 9|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2214625055 DAQ_Sensors1_LF: 2 DAQ_LF
+ SG_ Proximity_down : 14|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_up : 13|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_airgap : 9|4@1+ (1,2) [2|10] "mm"  MCU
+
+BO_ 2214625071 DAQ_Sensors1_LB: 2 DAQ_LB
+ SG_ Proximity_down : 14|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_up : 13|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_airgap : 9|4@1+ (1,2) [2|10] "mm"  MCU
+ SG_ Brake_reservoir_pressure : 0|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2214625103 DAQ_Sensors1_RB: 2 DAQ_RB
+ SG_ Proximity_down : 14|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_up : 13|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_airgap : 9|4@1+ (1,2) [2|10] "mm"  MCU
+
+BO_ 2181259151 Thermal_Pressure_2: 6 TCU
+ SG_ Thermal_Pressure6 : 32|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+ SG_ Thermal_Pressure5 : 16|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+ SG_ Thermal_Pressure4 : 0|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+
+BO_ 2148057087 PCU_Parameters: 5 MCU
+ SG_ PID_mode : 34|1@1+ (1,0) [0|1] ""  PCU
+ SG_ Slip_Regulation : 27|7@1+ (0.01,0) [0|0.7] "" Vector__XXX
+ SG_ IGBT_frequency : 20|7@1+ (100,0) [0|10000] "Hz"  PCU
+ SG_ Duty_cycle : 15|5@1+ (5,0) [0|100] ""  PCU
+ SG_ Modulation_index : 8|7@1+ (0.01,0.2) [0.2|1] ""  PCU
+ SG_ PCU_Ki : 4|4@1+ (100,0) [0|1500] ""  PCU
+ SG_ PCU_Kp : 0|4@1+ (100,0) [0|1500] ""  PCU
+
+BO_ 2147711231 LCU_Fault_message_RF: 1 LCU_RF
+ SG_ LCU_Thermistor34error : 7|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LCU_Thermistor12error : 6|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Vertical_airgap_error : 1|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Lateral_airgap_error : 0|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_current_error : 3|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_current_error : 2|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LEMS_voltage_error : 5|1@1+ (1,0) [0|1] ""  MCU
+ SG_ HEMS_Voltage_error : 4|1@1+ (1,0) [0|1] ""  MCU
+
+BO_ 2148135167 LCU_Parameters: 8 MCU
+ SG_ Vertical_airgap_setpoint : 42|10@1+ (0.01,0) [0|10] "mm"  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ PID_saturation : 52|10@1+ (0.1,0) [0|64] "A"  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ LCU_Kp : 0|13@1+ (1,0) [0|0] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ LCU_Ki : 13|10@1+ (1,0) [0|1000] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ LCU_Kd : 23|9@1+ (1,0) [0|500] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ Lateral_airgap_setpoint : 32|10@1+ (0.01,0) [0|10] "mm"  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+
+BO_ 2181062415 PCM_Temperature1: 8 DAQ_Thermal
+ SG_ PCM_Temp4 : 27|9@1+ (0.1,20) [20|50] "C"  DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU,TCU
+ SG_ PCM_Temp3 : 18|9@1+ (0.1,20) [20|50] "C"  DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU,TCU
+ SG_ PCM_Temp2 : 9|9@1+ (0.1,20) [20|50] "C"  DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,MCU,TCU
+ SG_ PCM_Temp1 : 0|9@1+ (0.1,20) [20|50] "C"  DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,TCU,MCU
+
+BO_ 2181193615 Thermal_Pressure_1: 6 DAQ_Thermal
+ SG_ Thermal_Pressure3 : 32|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+ SG_ Thermal_Pressure1 : 0|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+ SG_ Thermal_Pressure2 : 16|16@1+ (2,100000) [100000|200000] "Pa"  MCU,TCU
+
+BO_ 2155968767 LEMS_Temperature_RF: 5 DAQ_RF
+ SG_ LEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  MCU,LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ LEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ LEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_LF,LCU_RB,LCU_RF,LCU_LB
+ SG_ LEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  MCU,LCU_LB,LCU_LF,LCU_RB,LCU_RF
+
+BO_ 2155903231 HEMS_Temperature_RF: 5 DAQ_RF
+ SG_ HEMS_Temp4 : 30|10@1- (1,0) [0|0] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF,MCU
+ SG_ HEMS_Temp3 : 20|10@1- (1,0) [0|0] ""  MCU,LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ HEMS_Temp2 : 10|10@1- (1,0) [0|0] ""  MCU,LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ HEMS_Temp1 : 0|10@1- (1,0) [0|0] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF,MCU
+
+BO_ 2214690607 DAQ_Sensors2_LB: 4 DAQ_LB
+ SG_ Proximity_up : 24|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_down : 23|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_Temperature : 18|5@1+ (2,25) [25|60] "C"  MCU
+ SG_ LIM_reservoir_pressure : 9|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2214625167 DAQ_Sensors1_RF: 2 DAQ_RF
+ SG_ Proximity_down : 14|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Proximity_up : 13|1@1+ (1,0) [0|1] ""  MCU
+ SG_ LIM_airgap : 9|4@1+ (1,2) [2|10] "mm"  MCU
+ SG_ Brake_reservoir_pressure : 0|9@1+ (0.1,0) [0|50] "bar"  MCU
+
+BO_ 2148628735 LCU_Parameters_AcknowledgementRF: 8 LCU_RF
+ SG_ PID_saturation : 52|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap_setpoint : 42|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ Lateral_airgap_setpoint : 32|10@1+ (0.01,0) [0|10] "mm"  MCU
+ SG_ LCU_Kd : 23|9@1+ (1,0) [0|500] ""  MCU
+ SG_ LCU_Ki : 13|10@1+ (1,0) [0|1000] ""  MCU
+ SG_ LCU_Kp : 0|13@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2151708927 LCU_Sensors_RF: 8 LCU_RF
+ SG_ LEMS_voltage : 50|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ HEMS_voltage : 40|10@1+ (0.1,0) [0|64] "V"  MCU
+ SG_ LEMS_current : 30|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ HEMS_current : 20|10@1+ (0.1,0) [0|64] "A"  MCU
+ SG_ Vertical_airgap : 10|10@1+ (0.02,0) [0|20.46] "mm"  MCU
+ SG_ Lateral_airgap : 0|10@1+ (0.01,0) [0|10.23] "mm"  MCU
+
+BO_ 2151774463 LCU_Temperature_RF: 4 LCU_RF
+ SG_ LCU_Thermistor4 : 24|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor3 : 16|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor2 : 8|8@1+ (1,0) [0|0] ""  MCU
+ SG_ LCU_Thermistor1 : 0|8@1+ (1,0) [0|0] ""  MCU
+
+BO_ 2147647487 PCU_Fault_Message: 1 PCU
+ SG_ PCU_DC_braking : 0|1@1+ (1,0) [0|1] ""  MCU
+ SG_ PCU_overtemperature_error : 5|1@1+ (1,0) [0|1] ""  MCU
+ SG_ PCU_inverter_overcurrent : 4|1@1+ (1,0) [0|1] ""  MCU
+ SG_ PCU_three_phase_overcurrent : 3|1@1+ (1,0) [0|1] ""  MCU
+ SG_ PCU_overspeeding_error : 2|1@1+ (1,0) [0|1] ""  MCU
+ SG_ PCU_Friction_braking : 1|1@1+ (1,0) [0|1] ""  MCU
+
+BO_ 2148564991 PCU_Parameters_Acknowledgement: 5 PCU
+ SG_ PID_mode : 34|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Slip_Regulation : 27|7@1+ (0.01,0) [0|0.7] ""  MCU
+ SG_ IGBT_frequency : 20|7@1+ (100,0) [0|10000] "Hz"  MCU
+ SG_ Duty_cycle : 15|5@1+ (5,0) [0|100] ""  MCU
+ SG_ Modulation_index : 8|7@1+ (0.01,0.2) [0.2|1] ""  MCU
+ SG_ PCU_Ki : 4|4@1+ (100,0) [0|1500] ""  MCU
+ SG_ PCU_Kp : 0|4@1+ (100,0) [0|1500] ""  MCU
+
+BO_ 2149679103 PCU_sensors: 8 PCU
+ SG_ Pod_Velocity : 40|9@1+ (0.15,0) [0|76.65] "km/hr" Vector__XXX
+ SG_ Pod_Position : 49|9@1+ (0.06,0) [0|30.66] "m" Vector__XXX
+ SG_ Pod_Direction : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PCU_State : 58|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ IPM_Temp : 23|8@1+ (1,0) [0|0] ""  MCU
+ SG_ Inverter_Precharge_Bus_Voltage : 31|9@1+ (1,0) [0|300] "V"  MCU
+ SG_ Inverter_Current : 12|11@1- (1,0) [0|0] "A"  MCU
+ SG_ Three_Phase_Current3 : 8|4@1+ (10,0) [0|150] "A"  MCU
+ SG_ Three_Phase_Current2 : 4|4@1+ (10,0) [0|150] "A"  MCU
+ SG_ Three_Phase_Current1 : 0|4@1+ (10,0) [0|150] "A"  MCU
+
+BO_ 2147586050 MCU_State_Fault: 3 MCU
+ SG_ MCU_State : 0|8@1+ (1,0) [0|255] ""  DAQ_LB,DAQ_LF,DAQ_RB,DAQ_RF,DAQ_Thermal,HV_BMS,IMD,LCU_LB,LCU_LF,LCU_RB,LCU_RF,LV_BMS,PCU,TCU
+ SG_ MCU_Fault : 8|16@1+ (1,0) [0|65535] ""  DAQ_LF,DAQ_RB,DAQ_RF,DAQ_Thermal,HV_BMS,IMD,LCU_LB,LCU_LF,LCU_RB,LCU_RF,LV_BMS,PCU,TCU,DAQ_LB
+
+BO_ 2147782911 MCU_Control: 1 MCU
+ SG_ PCU_Precharge_Discharge : 7|1@1+ (1,0) [0|1] ""  PCU
+ SG_ HEMS_LEMS_Precharge_Discharge : 6|1@1+ (1,0) [0|1] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+ SG_ Direction_toggle : 5|1@1+ (1,0) [0|1] ""  PCU
+ SG_ Inverter_Cruiser_toggle : 4|1@1+ (1,0) [0|1] ""  MCU
+ SG_ Inverter_Booster_toggle : 3|1@1+ (1,0) [0|1] ""  PCU
+ SG_ Thermal_system_toggle : 1|1@1+ (1,0) [0|1] ""  TCU
+ SG_ Toggle_DC_brakes : 0|1@1+ (1,0) [0|1] ""  PCU
+ SG_ Levitate_toggle : 2|1@1+ (1,0) [0|1] ""  LCU_LB,LCU_LF,LCU_RB,LCU_RF
+
+BO_ 2297441762 IMU_Acceleration: 7 IMU
+ SG_ Acceleration_Status : 48|8@1+ (1,0) [0|255] ""  MCU,PCU
+ SG_ Vertical_BH : 40|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Vertical_BL : 32|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Longitudinal_BH : 24|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Longitudinal_BL : 16|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Lateral_BH : 8|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Lateral_BL : 0|8@1+ (1,0) [0|255] ""  MCU
+
+BO_ 2364549858 IMU_Angular_rate: 8 IMU
+ SG_ Angular_rate_Latency : 56|8@1+ (1,0) [0|255] ""  MCU,PCU
+ SG_ Angular_rate_Status : 48|8@1+ (1,0) [0|255] ""  MCU,PCU
+ SG_ Yaw_rate_BH : 40|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Yaw_rate_BL : 32|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Roll_rate_BH : 24|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Roll_rate_BL : 16|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Pitch_rate_BH : 8|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Pitch_rate_BL : 0|8@1+ (1,0) [0|255] ""  MCU
+
+BO_ 2364549602 IMU_Pitch_Roll: 8 IMU
+ SG_ Pitch_Roll_Latency : 56|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Pitch_Roll_Status : 48|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Roll_Angle_BH : 40|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Roll_Angle_BM : 32|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Roll_Angle_BL : 24|8@1+ (65536,0) [0|16711680] ""  MCU
+ SG_ Pitch_Angle_BH : 16|8@1+ (1,0) [0|255] ""  MCU
+ SG_ Pitch_Angle_BM : 8|8@1+ (256,0) [0|65280] ""  MCU
+ SG_ Pitch_Angle_BL : 0|8@1+ (65536,0) [0|16711680] ""  MCU
+
+
+
+CM_ BU_ MCU "
+";
+CM_ BO_ 2181127951 "0x2005F8F - RF
+0x2005F4F - RB
+0x2005F2F - LB
+0x2005F1F - LF
+";
+CM_ BO_ 2151772671 "0x4178FF - RF
+0x4174FF - RB
+0x4172FF - LB
+0x4171FF - LF
+";
+CM_ BO_ 2151772927 "0x4178FF - RF
+0x4174FF - RB
+0x4172FF - LB
+0x4171FF - LF
+";
+CM_ BO_ 2151773439 "0x4178FF - RF
+0x4174FF - RB
+0x4172FF - LB
+0x4171FF - LF
+";
+CM_ BO_ 2151707135 "0x4078FF - RF
+0x4074FF - RB
+0x4072FF - LB
+0x4071FF - LF
+";
+CM_ BO_ 2151707391 "0x4078FF - RF
+0x4074FF - RB
+0x4072FF - LB
+0x4071FF - LF
+";
+CM_ BO_ 2151707903 "0x4078FF - RF
+0x4074FF - RB
+0x4072FF - LB
+0x4071FF - LF
+";
+CM_ BO_ 2148626943 "0x1178FF - RF
+0x1174FF - RB
+0x1172FF - LB
+0x1171FF - LF
+";
+CM_ BO_ 2148627199 "0x1178FF - RF
+0x1174FF - RB
+0x1172FF - LB
+0x1171FF - LF
+";
+CM_ BO_ 2148627711 "0x1178FF - RF
+0x1174FF - RB
+0x1172FF - LB
+0x1171FF - LF
+";
+CM_ BO_ 2147709439 "0x378FF - RF
+0x374FF - RB
+0x372FF - LB
+0x371FF - LF
+";
+CM_ BO_ 2147709695 "0x378FF - RF
+0x374FF - RB
+0x372FF - LB
+0x371FF - LF
+";
+CM_ BO_ 2147710207 "0x378FF - RF
+0x374FF - RB
+0x372FF - LB
+0x371FF - LF
+";
+CM_ BO_ 2155966975 "0x8178FF - RF
+0x8174FF - RB
+0x8172FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155967231 "0x8178FF - RF
+0x8174FF - RB
+0x8172FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155967743 "0x8178FF - RF
+0x8174FF - RB
+0x8172FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155901439 "0x8078FF - RF
+0x8074FF - RB
+0x8072FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155901695 "0x8078FF - RF
+0x8074FF - RB
+0x8072FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155902207 "0x8078FF - RF
+0x8074FF - RB
+0x8072FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2214690703 "0x4017F8F - RF
+0x4017F4F - RB
+0x4017F2F - LB
+0x4017F1F - LF
+";
+CM_ BO_ 2214690591 "0x4017F8F - RF
+0x4017F4F - RB
+0x4017F2F - LB
+0x4017F1F - LF
+";
+CM_ BO_ 2214690639 "0x4017F8F - RF
+0x4017F4F - RB
+0x4017F2F - LB
+0x4017F1F - LF
+";
+CM_ BO_ 2214625055 "0x4007F8F - RF
+0x4007F4F - RB
+0x4007F2F - LB
+0x4007F1F - LF
+";
+CM_ BO_ 2214625071 "0x4007F8F - RF
+0x4007F4F - RB
+0x4007F2F - LB
+0x4007F1F - LF
+";
+CM_ BO_ 2214625103 "0x4007F8F - RF
+0x4007F4F - RB
+0x4007F2F - LB
+0x4007F1F - LF
+";
+CM_ BO_ 2181259151 "0x2035F8F - RF
+0x2035F4F - RB
+0x2035F2F - LB
+0x2035F1F - LF
+";
+CM_ BO_ 2147711231 "0x378FF - RF
+0x374FF - RB
+0x372FF - LB
+0x371FF - LF
+";
+CM_ BO_ 2181193615 "0x2025F8F - RF
+0x2025F4F - RB
+0x2025F2F - LB
+0x2025F1F - LF
+";
+CM_ BO_ 2155968767 "0x8178FF - RF
+0x8174FF - RB
+0x8172FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2155903231 "0x8078FF - RF
+0x8074FF - RB
+0x8072FF - LB
+0x8071FF - LF
+";
+CM_ BO_ 2214690607 "0x4017F8F - RF
+0x4017F4F - RB
+0x4017F2F - LB
+0x4017F1F - LF
+";
+CM_ BO_ 2214625167 "0x4007F8F - RF
+0x4007F4F - RB
+0x4007F2F - LB
+0x4007F1F - LF
+";
+CM_ BO_ 2148628735 "0x1178FF - RF
+0x1174FF - RB
+0x1172FF - LB
+0x1171FF - LF
+";
+CM_ BO_ 2151708927 "0x4078FF - RF
+0x4074FF - RB
+0x4072FF - LB
+0x4071FF - LF
+";
+CM_ BO_ 2151774463 "0x4178FF - RF
+0x4174FF - RB
+0x4172FF - LB
+0x4171FF - LF
+";
+CM_ BO_ 2297441762 "uint16 = BH * 2^8 + BL
+Acceleration (m/s^2) = (uint16 - 32000) / 100
+";
+CM_ SG_ 2297441762 Acceleration_Status "Lateral - 2 bits
+Longitudinal - 2 bits
+Vertical - 2 bits
+Unused - 2 bits
+
+00b - Fully functional 
+01b - Degraded
+10b - Error
+11b - Not available ";
+CM_ BO_ 2364549858 "uint16 = BH * 2^8 + BL
+Angular rate(deg/s) = (uint16 - 32000) / 128";
+CM_ SG_ 2364549858 Angular_rate_Status "Pitch - 2 bits
+Roll - 2 bits
+Yaw - 2 bits
+Unused - 2 bits
+
+00b - Fully functional 
+01b - Degraded
+10b - Error
+11b - Not available ";
+CM_ BO_ 2364549602 "uint32 = BH * 2^16 + BM * 2^8 + BL
+Angle (deg) = (uint32 - 8192000) / 32768";
+CM_ SG_ 2364549602 Pitch_Roll_Status "Comp Pitch - 2 bits
+Mems Pitch - 2 bits
+Comp Roll - 2 bits
+Mems Roll - 2 bits
+
+00b - Fully functional 
+01b - Degraded
+10b - Error
+11b - Not available ";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BU_  "NmStationAddress" INT 0 0;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2181127951 100;
+BA_ "GenMsgCycleTime" BO_ 2151772671 100;
+BA_ "GenMsgCycleTime" BO_ 2151772927 100;
+BA_ "GenMsgCycleTime" BO_ 2151773439 100;
+BA_ "GenMsgCycleTime" BO_ 2151707135 100;
+BA_ "GenMsgCycleTime" BO_ 2151707391 100;
+BA_ "GenMsgCycleTime" BO_ 2151707903 100;
+BA_ "GenMsgCycleTime" BO_ 2155966975 50;
+BA_ "GenMsgCycleTime" BO_ 2155967231 50;
+BA_ "GenMsgCycleTime" BO_ 2155967743 50;
+BA_ "GenMsgCycleTime" BO_ 2155901439 50;
+BA_ "GenMsgCycleTime" BO_ 2155901695 50;
+BA_ "GenMsgCycleTime" BO_ 2155902207 50;
+BA_ "GenMsgCycleTime" BO_ 2214690703 50;
+BA_ "GenMsgCycleTime" BO_ 2214690591 50;
+BA_ "GenMsgCycleTime" BO_ 2214690639 50;
+BA_ "GenMsgCycleTime" BO_ 2214625055 50;
+BA_ "GenMsgCycleTime" BO_ 2214625071 50;
+BA_ "GenMsgCycleTime" BO_ 2214625103 50;
+BA_ "GenMsgCycleTime" BO_ 2181259151 100;
+BA_ "GenMsgCycleTime" BO_ 2181062415 100;
+BA_ "GenMsgCycleTime" BO_ 2181193615 100;
+BA_ "GenMsgCycleTime" BO_ 2155968767 50;
+BA_ "GenMsgCycleTime" BO_ 2155903231 50;
+BA_ "GenMsgCycleTime" BO_ 2214690607 50;
+BA_ "GenMsgCycleTime" BO_ 2214625167 50;
+BA_ "GenMsgCycleTime" BO_ 2151708927 100;
+BA_ "GenMsgCycleTime" BO_ 2151774463 100;
+BA_ "GenMsgCycleTime" BO_ 2149679103 100;
+
